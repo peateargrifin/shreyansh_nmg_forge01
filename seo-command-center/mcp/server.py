@@ -149,6 +149,7 @@ class H(BaseHTTPRequestHandler):
                 with _lock:
                     RUN.update(data)
                 _emit("update", data)
+                print(f"[server] State update: {data}") # Added for manual debug visibility
                 self._send(200, json.dumps({"status": "ok"}), "application/json")
             except Exception as e:
                 self._send(400, json.dumps({"error": str(e)}), "application/json")

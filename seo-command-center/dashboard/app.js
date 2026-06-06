@@ -25,6 +25,15 @@ function handle({ event, data }) {
     log(`Loaded ${data.urls} URLs from ${data.site}`); $("tbody").innerHTML = "";
     totals = { High:0, Medium:0, Low:0, total:0 };
   } else if (event === "issue") { addIssue(data); log(`Found ${data.count} × ${data.type}`); }
+  else if (event === "update") {
+    if (data.current_stage) { $("meta").textContent = "· " + data.current_stage; }
+    if (data.urls_processed !== undefined) { $("urls").textContent = data.urls_processed + " URLs"; }
+    if (data.issues_found !== undefined) {
+      $("c-total").textContent = data.issues_found;
+      totals.total = data.issues_found;
+    }
+    log(`Pipeline: ${data.current_stage || 'Processing...'}`);
+  }
   else if (event === "summary") { log(`Audit complete: ${data.total_issues} issue types`); }
   else if (event === "fixes") { log(`Fixes ready: ${(data.titles||[]).length} titles, ${(data.redirect_map||[]).length} redirects`); }
   else if (event === "exported") { $("export").innerHTML = "<b>report.html written ✓</b><br><span style='color:#c8c5be;font-size:12px'>Open or email outputs/report.html to the client.</span>"; }

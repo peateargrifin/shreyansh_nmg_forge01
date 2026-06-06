@@ -19,7 +19,7 @@ Format per entry:
 
 - **Prompt:** "We are moving to the 'Ingest' and 'Detect' stages. Open seo/detector.py. Write deterministic Python code (using the pandas library) to read ../sample-export/internal_all.csv. You must programmatically detect these exact issues without using the LLM:
 Missing/Duplicate Title 1 (ignore non-HTML rows)
-Title too long (> 561px or > 60 chars) or too short (< 30 chars)
+Title too long (> 561px or > 60 chars) too short (< 30 chars)
 Missing/Duplicate Meta Description 1, or too long (> 155 chars)
 Missing H1, or Multiple/Duplicate H1s
 Broken links (Status 4xx), Server errors (5xx), Redirects (3xx)
@@ -43,4 +43,40 @@ Append this prompt to PROMPTS.md.
 Run the MCP server to ensure it boots without errors.
 Once verified, run git add . and git commit -m \"feat: implement backend state management for MCP dashboard\". Do not proceed until committed."
 - **For:** Implementing backend state management for MCP dashboard.
+- **Revised?** No.
+
+- **Prompt:** "We are now ready to build the frontend for the live cockpit to secure our human-scored dashboard points. Update dashboard/index.html and dashboard/app.js to connect to our MCP server at http://localhost:7700.
+
+Since we set up the backend to trigger SSE (Server-Sent Events), implement an EventSource in app.js to listen for these live updates. The UI must look clean, product-grade, and clearly display the current pipeline stage (e.g., 'Ingesting', 'Detecting') along with a live, updating count of the issues found.
+
+PROCESS ENFORCEMENT:
+
+Start the MCP server locally. Open the dashboard in a browser, then run seo/detector.py in another terminal to verify the frontend visibly updates in real-time without needing a page refresh.
+
+Log the SSE frontend architecture decision in DECISIONS.md.
+
+Append this prompt to PROMPTS.md.
+
+If you encounter CORS errors or connection issues, debug and fix them directly.
+
+Once verified and working without errors, run git add . and git commit -m \"feat: build real-time SSE frontend for local MCP dashboard\". Do not proceed until committed."
+- **For:** Building the real-time SSE frontend for the MCP dashboard.
+- **Revised?** No.
+
+- **Prompt:** "The test command hung indefinitely. We have a threading deadlock, and running Start-Process with -NoNewWindow is locking up the terminal.
+
+Here is the plan:
+
+Open mcp/server.py and replace HTTPServer with ThreadingHTTPServer (from the http.server module) so it can handle the persistent SSE stream and incoming POST updates simultaneously.
+
+Ensure app.js is correctly handling the SSE connection.
+
+PROCESS ENFORCEMENT:
+
+Update DECISIONS.md noting the switch to ThreadingHTTPServer to resolve the deadlock, and that we are avoiding -NoNewWindow terminal testing.
+
+DO NOT try to start the server or run the detector yourself to test it. I will test it manually in separate windows.
+
+Just apply the code fixes, update the logs, run git add . and git commit -m 'fix: resolve SSE deadlock by migrating to ThreadingHTTPServer'. Do not proceed until committed."
+- **For:** Resolving SSE deadlock by ensuring ThreadingHTTPServer is used.
 - **Revised?** No.
