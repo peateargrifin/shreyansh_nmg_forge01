@@ -35,3 +35,5 @@ dashboard at localhost:7700, and outputs `outputs/report.json` + `outputs/report
 ## Things I have learned during the build (update this as you go)
 - (e.g. "SF leaves Title 1 blank on redirected URLs — must filter Status Code 200 first")
 - ...
+
+- [Complete] Champion tier goals achieved.
