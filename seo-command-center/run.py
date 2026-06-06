@@ -68,16 +68,16 @@ def main():
     server.seo_export() # Writes outputs/report.html
 
     # Champion Tier: Fix CSVs
-    os.makedirs("outputs", exist_ok=True)
+    os.makedirs(server.OUT_DIR, exist_ok=True)
 
     # Titles/Metas Fix CSV
-    with open("outputs/titles_metas_fixes.csv", "w", encoding="utf-8", newline="") as f:
+    with open(os.path.join(server.OUT_DIR, "titles_metas_fixes.csv"), "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["url", "old", "new"])
         writer.writeheader()
         writer.writerows(fix_results['titles'])
 
     # Redirect Map CSV
-    with open("outputs/redirect_map.csv", "w", encoding="utf-8", newline="") as f:
+    with open(os.path.join(server.OUT_DIR, "redirect_map.csv"), "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["from", "to", "reason"])
         writer.writeheader()
         writer.writerows(fix_results['redirect_map'])
