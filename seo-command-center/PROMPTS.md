@@ -34,3 +34,13 @@ Run the script against ../sample-export/internal_all.csv to ensure it parses suc
 Once it runs perfectly without crashing, run git add . and git commit -m \"feat: implement deterministic rulebook detection in detector.py\". Do not proceed until committed."
 - **For:** Implementing deterministic SEO rulebook detection using pandas.
 - **Revised?** No.
+
+- **Prompt:** "We need to hit our 10+ incremental commit requirement and build out the MCP architecture. Let's focus solely on the backend integration for our live dashboard. Modify mcp/server.py to expose a state-management system (e.g., a simple dictionary or class) that can receive live updates from detector.py (like 'urls_processed', 'current_stage', 'issues_found'). Do NOT build the frontend HTML yet.
+PROCESS ENFORCEMENT:
+Update detector.py to send brief status updates to this server via HTTP POST or direct import depending on the architecture.
+Log this backend architecture decision in DECISIONS.md.
+Append this prompt to PROMPTS.md.
+Run the MCP server to ensure it boots without errors.
+Once verified, run git add . and git commit -m \"feat: implement backend state management for MCP dashboard\". Do not proceed until committed."
+- **For:** Implementing backend state management for MCP dashboard.
+- **Revised?** No.

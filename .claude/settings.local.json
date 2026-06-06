@@ -4,7 +4,8 @@
       "Bash(HOOK_EVENT=ManualTest bash *)",
       "PowerShell(git *)",
       "PowerShell(python seo-command-center\\\\seo\\\\detector.py sample-export)",
-      "PowerShell(pip install *)"
+      "PowerShell(pip install *)",
+      "PowerShell(Stop-Process *)"
     ]
   }
 }

@@ -140,6 +140,21 @@ class H(BaseHTTPRequestHandler):
         self.send_response(code); self.send_header("Content-Type", ctype)
         self.send_header("Cache-Control", "no-cache"); self.end_headers()
         self.wfile.write(body.encode() if isinstance(body, str) else body)
+    def do_POST(self):
+        if self.path == "/update":
+            content_length = int(self.headers.get('Content-Length', 0))
+            body = self.rfile.read(content_length)
+            try:
+                data = json.loads(body)
+                with _lock:
+                    RUN.update(data)
+                _emit("update", data)
+                self._send(200, json.dumps({"status": "ok"}), "application/json")
+            except Exception as e:
+                self._send(400, json.dumps({"error": str(e)}), "application/json")
+        else:
+            self._send(404, "not found")
+
     def do_GET(self):
         if self.path in ("/", "/index.html"):
             p = os.path.join(DASH_DIR, "index.html")

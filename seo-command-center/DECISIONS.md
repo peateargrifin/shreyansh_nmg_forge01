@@ -18,3 +18,4 @@ Format:
 - `[2026-06-06 10:15]` Switched to `pandas` for `detector.py` → better handling of NaN values via `.fillna('')` and more efficient filtering of large CSVs.
 - `[2026-06-06 10:15]` Row Isolation Strategy: Used `Content Type` column to separate `text/html` for page-level checks and image-specific types (e.g., `image/jpeg`, `image/png`) for alt-text checks.
 - `[2026-06-06 10:15]` NaN Handling: Applied `.fillna('')` to all columns during ingest to avoid `NaN` comparisons failing and to treat empty cells consistently as empty strings.
+- `[2026-06-06 10:30]` Architecture Choice: Implemented a JSON-based HTTP POST endpoint (`/update`) in the MCP server for status updates → allows `detector.py` to remain a standalone tool while still feeding the live dashboard, avoiding tight coupling and circular imports.
