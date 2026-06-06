@@ -2,7 +2,7 @@
   "site": "nmgtechnologies.com",
   "urls_crawled": 456,
   "summary": {
-    "total_issues": 10,
+    "total_issue_types": 10,
     "total_affected_urls": 198,
     "by_severity": {
       "High": 18,
@@ -295,7 +295,7 @@
       {
         "url": "https://nmgtechnologies.com/",
         "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
-        "new": "AI Software & App Development Company | NMG Technologies"
+        "new": "AI Software, Web & Mobile App Development Company | NMG"
       },
       {
         "url": "https://nmgtechnologies.com/clients/case-studies/",
@@ -306,9 +306,400 @@
         "url": "https://nmgtechnologies.com/industry/fintech",
         "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
         "new": "Fintech Software & App Development Services | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/industry/healthcare",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "Healthcare Software & App Development Services | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/industry/marketresearch",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "IT Outsource Software, Web & Mobile App Development Company - NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/industry/staffing",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "IT Staffing & Software Development Services | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/industry/travel",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "IT Outsource Software, Web & Mobile App Development Company - NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/success-stories",
+        "old": "Case Studies - Successful Case Studies of Client | NMG Technologies",
+        "new": "Client Success Stories & Case Studies | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/success-stories/competiscan",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "Competiscan Case Study: Market Intelligence Success | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/success-stories/compound-banc",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "Compound Banc Case Study: Custom Software & App Development"
+      },
+      {
+        "url": "https://nmgtechnologies.com/success-stories/international-insurance",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "International Insurance Case Study | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/success-stories/wealth-concert",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "Wealth Concert Case Study: Custom Software Development | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "AI Software, Web & Mobile App Development Company | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/agentic-ai",
+        "old": "Agentic AI Consulting Services | Expert AI Development & Integration",
+        "new": "Agentic AI Services: From Automation to Autonomy"
+      },
+      {
+        "url": "https://nmgtechnologies.com/ai-driven-enterprise-software-development",
+        "old": "Enterprise AI Solutions | AI Software and Development Company",
+        "new": "AI-Driven Enterprise Software Development Services"
+      },
+      {
+        "url": "https://nmgtechnologies.com/ai-enhanced-web-mobile-application-development",
+        "old": "AI App Development Services | Custom Artificial Intelligence Applications",
+        "new": "AI Web & Mobile App Development Services | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/ai-optimized-ecommerce-solutions",
+        "old": "AI-Powered Ecommerce | Advanced AI Solutions for Online Retail",
+        "new": "AI-Powered eCommerce Solutions | Scale Your Online Retail"
+      },
+      {
+        "url": "https://nmgtechnologies.com/ai-powered-business-process-transformation",
+        "old": "AI Powered Service | Innovative AI-Driven Solutions for Business",
+        "new": "AI-Powered Business Process Transformation | NMG Tech"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/advantages-of-asp-net-core",
+        "old": ".NET Core: 20 Advantages of Building Your Software in ASP.NET Core |",
+        "new": "20 Key Advantages of Building Software with ASP.NET Core"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/best-practices-offshore-software-development",
+        "old": "Best Practices of Offshore Software Development Company (2022)",
+        "new": "Offshore Software Development: Best Practices for 2024"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/how-to-build-an-app-like-uber",
+        "old": "How To Build an App like Uber - Mobile App Development | NMG",
+        "new": "How to Build an App Like Uber: Cost & Development Guide"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/nmg-technologies-made-list-top-mobile-app-development-companies-goodfirms",
+        "old": "NMG Made It on the List of Top Mobile App Development Companies at GoodFirms",
+        "new": "NMG Technologies Named Top Mobile App Developer by GoodFirms"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/nmg-technologies-participated-in-softwave-2023-the-republic-of-korea-software-exhibition",
+        "old": "NMG Technologies Participated in Softwave 2023, The Republic of Korea Software Exhibition",
+        "new": "NMG Technologies at Softwave 2023: Korea Software Exhibition"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/nmg-technologies-to-participate-in-leap-2023-tech-conference-in-riyadh-saudi-arabia",
+        "old": "NMG Technologies to Participate in LEAP 2023 Tech Conference in Riyadh, Saudi Arabia",
+        "new": "NMG Technologies Joins LEAP 2023 Tech Conference in Riyadh"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/nmg-technologies-to-participate-in-mobile-word-capital-barcelona-the-worlds-largest-and-most-influential-connectivity-event",
+        "old": "NMG Technologies to Participate in Mobile Word Capital Barcelona \u2013 the world\u2019s largest and most influential connectivity event",
+        "new": "NMG Technologies Joins MWC Barcelona: Connectivity Event"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/nmg-technologies-to-participate-in-retail-innovation-conference-and-expo-2023-in-chicago",
+        "old": "NMG Technologies to Participate in Retail Innovation Conference and Expo 2023 in Chicago",
+        "new": "NMG Technologies at Retail Innovation Conference 2023"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/nmg-technologies-to-sponsor-and-exhibit-at-brighton-seo-2023-and-online-pr-show-2023",
+        "old": "NMG Technologies to Sponsor and Exhibit at Brighton SEO 2023 and Online PR Show 2023",
+        "new": "NMG Technologies at Brighton SEO & Online PR Show 2023"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/nmg-to-participate-in-the-largest-tech-expo-in-the-middle-east-gitex-global-2022-dubai",
+        "old": "NMG to Participate in the Largest Tech Expo in the Middle East - GITEX Global 2022, Dubai",
+        "new": "NMG at GITEX Global 2022: Middle East's Largest Tech Expo"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/nmg-to-participate-in-the-largest-tech-expo-in-the-middle-east-gitex-global-2023-dubai",
+        "old": "NMG to Participate in the Largest Tech Expo in the Middle East - GITEX Global 2023, Dubai",
+        "new": "NMG at GITEX Global 2023: Middle East's Largest Tech Expo"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/sempo-hangouts-session-user-experience",
+        "old": "15 Best Things About Web Design & User Experience in 2019 | NMG",
+        "new": "Web Design & UX Insights: SEMPO Hangouts Session | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/top-wordpress-themes",
+        "old": "Top 15 WordPress Theme for Your Business in 2019 | NMG Technologies",
+        "new": "15 Best WordPress Themes for Your Business in 2024"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/ui-ux-mobile-app-development",
+        "old": "Importance of UI & UX in mobile app development in 2022 | NMG",
+        "new": "UI/UX in Mobile App Development: Why It Matters | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/wordpress-website-perfect-solution-small-business",
+        "old": "Why WordPress Website Is The Perfect Solution For Your Small Business",
+        "new": "Why WordPress Is the Perfect Choice for Your Small Business"
+      },
+      {
+        "url": "https://nmgtechnologies.com/blog/working-from-home-during-the-coronavirus-lockdown",
+        "old": "How to Manage Work from home during the coronavirus lockdown | NMG",
+        "new": "Remote Work Strategies During Lockdown | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/clients/case-studies/",
+        "old": "Case Studies - Successful Case Studies of Client | NMG Technologies",
+        "new": "Client Success Stories & Case Studies | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/company/about-us",
+        "old": "About NMG Technologies - Software, Web & Mobile App Development Company",
+        "new": "NMG Technologies | Global Software & App Development Partner"
+      },
+      {
+        "url": "https://nmgtechnologies.com/company/careers/",
+        "old": "Careers - Job Opportunity for Web, Mobile, and Software Developers | NMG Technologies",
+        "new": "Tech Careers: Web, Mobile & Software Jobs | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/company/outsourcing/",
+        "old": "Outsourcing Company - Best Outsource Software & Web Development Services | NMG Technologies",
+        "new": "Software & Web Development Outsourcing | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/company/process/",
+        "old": "Our Successful Design & Development Process | NMG Technologies",
+        "new": "Expert Design & Development Process | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/company/promise/",
+        "old": "Our Promise: Understand, Build & Measure Client Efficient Solutions | NMG",
+        "new": "NMG Promise: On-Time & On-Budget Software Solutions"
+      },
+      {
+        "url": "https://nmgtechnologies.com/download-appdevelopmentcost-ebook",
+        "old": "Download App Development Cost Ebook for 2019 with Example | NMG Technologies",
+        "new": "App Development Cost Guide: 2024 Ebook | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/download-content-editorial-calendar",
+        "old": "Download Free Content Editorial Calendar Template | NMG Technologies",
+        "new": "Free Content Editorial Calendar Template | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/download-developmental-checklist",
+        "old": "Download Web Development Checklist [Updated 2019] | NMG Technologies",
+        "new": "App Development Checklist: Free Download | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/get-custom-pricing",
+        "old": "Get Custom Pricing & Quote for Development & Marketing Services | NMG Technologies",
+        "new": "Custom Development & Marketing Quotes | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/industry/fintech",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "IT Outsource Software, Web & Mobile App Development Company - NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/industry/healthcare",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "Healthcare Software & App Development Services | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/industry/marketresearch",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "IT Outsource Software, Web & Mobile App Development Company - NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/industry/staffing",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "IT Staffing & Software Development Services | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/industry/travel",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "IT Outsource Software, Web & Mobile App Development Company - NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/resources/library/",
+        "old": "Most Resourceful Content for Businesses to Get Started | NMG Technologies",
+        "new": "Business Resource Library | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/resources/library/hire-web-developers-guide",
+        "old": "The Ultimate Guide to Hire Web Developers in 2023 [Updated] | NMG",
+        "new": "How to Hire Web Developers: 2025 Hiring Guide | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/custom-software-development/",
+        "old": "Best Custom Software Development Service Company - 2019 | NMG Technologies.",
+        "new": "Custom Software Development Services | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/custom-software-development/aspnet-development/",
+        "old": "Asp.Net Development Services - Hire Asp.Net Web Developers | NMG Technologies",
+        "new": "Expert ASP.NET Development Services | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/custom-software-development/php-development/",
+        "old": "PHP Development Services - Hire PHP Web Developers | NMG Technologies",
+        "new": "Expert PHP Development Services | Hire PHP Developers | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/custom-software-development/saas-development/",
+        "old": "SaaS App Development Services - Hire #1 SaaS Developers | NMG Technologies",
+        "new": "Expert SaaS App Development Services | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/ecommerce-development/",
+        "old": "Ecommerce Web Development Company  | Hire World's Best E-commerce Developer",
+        "new": "Expert eCommerce Development Services | Boost Your Sales"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/it-consulting/",
+        "old": "IT Consulting Services - Best IT Consultant Firm For Your Business",
+        "new": "Expert IT Consulting Services for Business Growth"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/mobile-application-development",
+        "old": "#1 Mobile App Development Services - Hire  App Developers | NMG Technologies",
+        "new": "Expert Mobile App Development Services | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/mobile-application-development/android-app-development",
+        "old": "Android App Development Company - Hire Android Developers | NMG Technologies",
+        "new": "Android App Development Company | Hire Expert Developers"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/mobile-application-development/ios-app-development/",
+        "old": "iPhone App Development Company - Hire iOS App Developers | NMG Technologies",
+        "new": "iOS App Development Company | Hire Expert iOS Developers"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/mobile-application-development/tablet-app-development/",
+        "old": "Tablet App Development Services - Hire Tablet App Developers | NMG Technologies",
+        "new": "Expert Tablet App Development Services | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/user-interface-design/",
+        "old": "User Interface (UI) Design Services - Hire Experienced UI/UX Designers",
+        "new": "Expert UI Design Services | Hire Top UI/UX Designers"
+      },
+      {
+        "url": "https://nmgtechnologies.com/services/user-interface-design/mobile-design/",
+        "old": "Mobile App Design Services - Hire Mobile App Designers Company",
+        "new": "Expert Mobile App Design Services | Hire Top App Designers"
+      },
+      {
+        "url": "https://nmgtechnologies.com/solution/artificial-intelligence/",
+        "old": "AI Software Development - #1 Artificial Intelligence Development Company",
+        "new": "AI Development Services | Expert AI Software Solutions"
+      },
+      {
+        "url": "https://nmgtechnologies.com/solution/augmented-reality/",
+        "old": "Augmented Reality Apps Development Services - IT Staff Augmentation Developers",
+        "new": "Augmented Reality App Development & Staff Augmentation"
+      },
+      {
+        "url": "https://nmgtechnologies.com/solution/blockchain",
+        "old": "Blockchain Software & App Development Services - Hire Blockchain Developers",
+        "new": "Blockchain Development Services | Hire Expert Developers"
+      },
+      {
+        "url": "https://nmgtechnologies.com/solution/cloud-apps/",
+        "old": "Cloud Application Development Services - Cloud App Migration Company",
+        "new": "Expert Cloud Application Development & Migration Services"
+      },
+      {
+        "url": "https://nmgtechnologies.com/solution/fintech/",
+        "old": "Fintech Apps & Software Development Services - Hire Fintech Developers",
+        "new": "Fintech Software Development Services | Hire Fintech Experts"
+      },
+      {
+        "url": "https://nmgtechnologies.com/solution/portals/",
+        "old": "Web Portal Development Services - Ecommerce Portal Apps for Business",
+        "new": "Custom Web Portal Development Services for Business"
+      },
+      {
+        "url": "https://nmgtechnologies.com/success-stories",
+        "old": "Case Studies - Successful Case Studies of Client | NMG Technologies",
+        "new": "Client Success Stories & Case Studies | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/success-stories/competiscan",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "Competiscan Case Study: Market Intelligence Success | NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/success-stories/compound-banc",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "Compound Banc Case Study: Custom Software & App Development"
+      },
+      {
+        "url": "https://nmgtechnologies.com/success-stories/international-insurance",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "International Insurance Case Study | NMG Technologies"
+      },
+      {
+        "url": "https://nmgtechnologies.com/success-stories/wealth-concert",
+        "old": "IT Outsource Software, Web & Mobile App Development Company - NMG",
+        "new": "Wealth Concert Case Study | App Development by NMG"
+      },
+      {
+        "url": "https://nmgtechnologies.com/work/ecommerce/",
+        "old": "Ecommerce Website Design & Development Portfolio | NMG Technologies",
+        "new": "B2B Ecommerce Design & Development Portfolio | NMG Tech"
       }
     ],
-    "redirect_map": []
+    "redirect_map": [
+      {
+        "from": "https://nmgtechnologies.com/hs-fs/hubfs/B-W_icon.png.png?width=101&height=100&name=B-W_icon.png.png",
+        "to": "https://nmgtechnologies.com/hs-fs/hubfs/B-W_icon.png?width=101&height=100&name=B-W_icon.png",
+        "reason": "Broken link (4xx)"
+      },
+      {
+        "from": "https://nmgtechnologies.com/hs-fs/hubfs/edtech.png.png?width=101&height=100&name=edtech.png.png",
+        "to": "https://nmgtechnologies.com/hs-fs/hubfs/edtech.png",
+        "reason": "Broken link (4xx)"
+      },
+      {
+        "from": "https://nmgtechnologies.com/hs-fs/hubfs/fintech.png.png?width=101&height=100&name=fintech.png.png",
+        "to": "https://nmgtechnologies.com/hs-fs/hubfs/fintech.png",
+        "reason": "Broken link (4xx)"
+      },
+      {
+        "from": "https://nmgtechnologies.com/hs-fs/hubfs/fintechgrey.png?width=122&height=80&name=fintechgrey.png",
+        "to": "https://nmgtechnologies.com/hubfs/fintechgrey.png",
+        "reason": "Broken link (4xx)"
+      },
+      {
+        "from": "https://nmgtechnologies.com/hs-fs/hubfs/glob.png.png?width=101&height=100&name=glob.png.png",
+        "to": "https://nmgtechnologies.com/hs-fs/hubfs/glob.png",
+        "reason": "Broken link (4xx)"
+      },
+      {
+        "from": "https://nmgtechnologies.com/hs-fs/hubfs/healthgrey.png?width=105&height=90&name=healthgrey.png",
+        "to": "https://nmgtechnologies.com/hubfs/healthgrey.png",
+        "reason": "Broken link (4xx)"
+      }
+    ]
   },
   "recommendations": [
     "Fix the 12 High-severity 'duplicate_title' issue(s) first.",
@@ -319,7 +710,7 @@
   ],
   "run_meta": {
     "model": "qwen3.5:9b",
-    "model_calls": 3,
-    "duration_sec": 37.9
+    "model_calls": 81,
+    "duration_sec": 908.6
   }
 }
