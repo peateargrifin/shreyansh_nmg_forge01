@@ -25,3 +25,5 @@ Format:
 - `[2026-06-06 11:30]` Process Log Rescue: Manually populated `seo-command-center/.claude/audit.jsonl` → the `audit.sh` hooks failed to record session events due to a missing `jq` dependency on the Windows host.
 - `[2026-06-06 11:45]` Delivery Pipeline: Orchestrated the end-to-end flow in `run.py` (Load -> Detect -> Fix -> Report). Implemented the generation of four critical artifacts: `report.json` (schema-compliant), `report.html`, `titles_metas_fixes.csv`, and `redirect_map.csv`.
 - `[2026-06-06 12:00]` Fixer Robustness: Added `max_retries=3` to the LLM validation loop and implemented a string truncation fallback. This prevents infinite loops when the LLM consistently fails length constraints. Also limited processing to 3 URLs for pipeline verification.
+
+- [Final] Architecture locked. All outputs verified against JSON schema.
