@@ -80,3 +80,26 @@ DO NOT try to start the server or run the detector yourself to test it. I will t
 Just apply the code fixes, update the logs, run git add . and git commit -m 'fix: resolve SSE deadlock by migrating to ThreadingHTTPServer'. Do not proceed until committed."
 - **For:** Resolving SSE deadlock by ensuring ThreadingHTTPServer is used.
 - **Revised?** No.
+
+- **Prompt:** "We are now moving to the Champion tier 'Fixer' stage. Create or update seo/fixer.py (and update agents/fixer.md to reflect this) to process the issues found by detector.py.
+
+Write a Python class or function that uses the local Ollama REST API (http://localhost:11434/api/generate) to call our model (gemma4:31b-cloud) to fix the issues.
+
+For broken links (4xx), ask the model to suggest a logical redirect target based on the URL slug.
+
+For bad titles/metas, ask the model to write new ones.
+
+CRITICAL BROWNIE POINTS (Validation Loop):
+You MUST implement a while loop for the title and meta generation. If the model returns a title > 60 characters or a meta description > 155 characters, your Python code must explicitly reject it and call the Ollama API again until it fits the length constraint.
+
+PROCESS ENFORCEMENT:
+
+Log this exact validation loop architecture in DECISIONS.md.
+
+Append this prompt to PROMPTS.md.
+
+Test the fixer on just 2 or 3 rows to prove the Ollama connection and validation loop works without hanging.
+
+Once successful, git add . and git commit -m 'feat: implement Champion fixer with strict LLM validation loop'. Do not proceed until committed."
+- **For:** Implementing the Champion-tier fixer with a strict validation loop.
+- **Revised?** No.

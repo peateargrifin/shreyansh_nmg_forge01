@@ -7,20 +7,26 @@ description: Uses the local model to rewrite bad or missing titles and meta desc
 
 Turn detected problems into ready-to-use fixes. This is where the model earns its place.
 
-## Titles and meta descriptions
-For pages flagged `missing_title`, `title_too_long`, `missing_meta_description`, etc.:
-1. Ask the model to write an optimized title (≤ 60 characters / ≤ 561 pixels) and meta
-   description (≤ 155 characters) using the page's URL, H1, and existing copy as context.
-2. **Validate the length in code.** If the rewrite is over the limit, re-ask once. A
-   validation-and-retry loop is exactly the discipline the judges reward.
-3. Collect `{url, old, new}` for each.
+## Implementation Details
+- **Architecture**: Implemented as a Python class `Fixer` in `seo/fixer.py`.
+- **LLM Integration**: Communicates with local Ollama API (`gemma4:31b-cloud`) using `requests`.
+- **Validation Loop (Champion Tier)**:
+  - For titles and meta descriptions, the fixer uses a `while` loop.
+  - If the LLM returns a title > 60 characters or a meta description > 155 characters, the result is rejected.
+  - The prompt is refined to be more explicit about the length constraint, and the model is called again.
+  - Max retry limit is set to 5 attempts to prevent infinite loops.
+- **Redirect Suggestions**: Analyzes the URL slug of 4xx pages to suggest a logical target URL.
 
-## Redirect map
-For `broken_link` (4xx) pages:
-1. Find the closest live (200, indexable) URL — by path similarity or section.
-2. Produce `{from, to, reason}` for each.
-
-Finally call MCP `set_fixes(titles, redirect_map)`.
+## Workflow
+1. For pages flagged `missing_title`, `title_too_long`, `missing_meta_description`, etc.:
+   - Request optimized rewrite.
+   - Validate length in Python.
+   - Retry if too long.
+   - Collect `{url, old, new}`.
+2. For `broken_link` (4xx) pages:
+   - Request logical redirect target based on slug.
+   - Collect `{from, to, reason}`.
+3. Final results are pushed to the MCP server via `seo_set_fixes`.
 
 Keep each rewrite a small, separate model call so context stays tight and quota stays low.
 Never feed the whole crawl to the model — only the one page you are fixing.
