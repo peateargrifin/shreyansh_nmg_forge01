@@ -48,8 +48,14 @@ def seo_load(export_dir: str) -> dict:
 
 
 def _guess_site(rows):
-    if not rows: return "unknown"
-    addr = rows[0].get("Address", "")
+    if rows is None or (hasattr(rows, 'empty') and rows.empty): return "unknown"
+    # If rows is a DataFrame, we access it differently than a list
+    addr = ""
+    if hasattr(rows, 'iloc'):
+        addr = rows.iloc[0].get("Address", "")
+    elif isinstance(rows, list) and len(rows) > 0:
+        addr = rows[0].get("Address", "")
+
     try:
         from urllib.parse import urlparse
         return urlparse(addr).netloc or "unknown"

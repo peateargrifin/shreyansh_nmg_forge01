@@ -178,7 +178,7 @@ def summarize(issues: list[dict]) -> dict:
     by_sev = defaultdict(int)
     for i in issues:
         by_sev[i["severity"]] += i["count"]
-    return {"total_issue_types": len(issues),
+    return {"total_issues": len(issues),
             "total_affected_urls": sum(i["count"] for i in issues),
             "by_severity": {"High": by_sev["High"], "Medium": by_sev["Medium"], "Low": by_sev["Low"]}}
 

@@ -6,7 +6,8 @@
       "PowerShell(python seo-command-center\\\\seo\\\\detector.py sample-export)",
       "PowerShell(pip install *)",
       "PowerShell(Stop-Process *)",
-      "PowerShell(python seo-command-center\\\\seo\\\\fixer.py sample-export)"
+      "PowerShell(python seo-command-center\\\\seo\\\\fixer.py sample-export)",
+      "PowerShell(python seo-command-center\\\\run.py sample-export --no-dashboard)"
     ]
   }
 }

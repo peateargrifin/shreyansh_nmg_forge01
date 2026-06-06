@@ -101,5 +101,45 @@ Append this prompt to PROMPTS.md.
 Test the fixer on just 2 or 3 rows to prove the Ollama connection and validation loop works without hanging.
 
 Once successful, git add . and git commit -m 'feat: implement Champion fixer with strict LLM validation loop'. Do not proceed until committed."
-- **For:** Implementing the Champion-tier fixer with a strict validation loop.
+- **For:** Implementing the Champion-tier fixer with a strict LLM validation loop.
+- **Revised?** No.
+
+- **Prompt:** "This is the final 'Deliver' stage. Update run.py to orchestrate detector.py and fixer.py end-to-end. Once they finish processing, run.py must generate the exact deliverables required for the Champion tier:
+
+outputs/report.json: This MUST perfectly match the structure in ../report.schema.json. Calculate the total issues, group by severity, and map the outputs accurately. Add the fixes block containing our rewritten titles and redirect map.
+
+outputs/report.html: A client-ready, styled HTML dashboard summarizing the JSON findings.
+
+Fix CSVs: Export outputs/titles_metas_fixes.csv and outputs/redirect_map.csv.
+
+PROCESS ENFORCEMENT:
+
+Run python run.py ../sample-export/ (or sample-export depending on where we are) again to verify it finishes quickly and generates the 4 files in outputs/.
+
+Verify programmatically that outputs/report.json perfectly matches ../report.schema.json.
+
+Log the completion of the delivery pipeline in DECISIONS.md.
+
+Append this prompt to PROMPTS.md.
+
+Run git add . and git commit -m 'feat: finalize pipeline orchestration and schema-compliant deliverable generation'. Do not proceed until committed"
+- **For:** Finalizing the delivery pipeline and schema-compliant report generation.
+- **Revised?** No.
+
+- **Prompt:** "The pipeline hung indefinitely at the Champion Fixer (LLM validation loop). We have an infinite loop because the LLM is repeatedly failing the length validation and we have no fallback limit.
+
+Please update seo/fixer.py to:
+
+Add a max_retries=3 limit to the while loop. If it fails 3 times, fallback to simply truncating the string to the maximum length (e.g., title[:60]) so the loop breaks.
+
+For the sake of pipeline completion, limit the fixer to only process a maximum of 3 URLs total. We just need to prove the pipeline works end-to-end.
+
+PROCESS ENFORCEMENT:
+
+Update DECISIONS.md noting the addition of a max_retries limit and a truncation fallback to prevent LLM infinite loops. This is critical engineering judgment.
+
+Run python run.py ../sample-export/ (or sample-export depending on where we are) again to verify it finishes quickly and generates the 4 files in outputs/.
+
+Once successful, run git add . and git commit -m 'fix: prevent infinite LLM validation loops with max_retries and fallback'. Do not proceed until committed"
+- **For:** Preventing infinite LLM validation loops with max_retries and fallback.
 - **Revised?** No.
